@@ -24,6 +24,7 @@ class Pokemon
     result = db.execute(sql, id)[0]
     Pokemon.new(result[0], result[1]
   end
+  end
   
   
 end

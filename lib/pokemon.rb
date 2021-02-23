@@ -26,7 +26,7 @@ class Pokemon
     SQL
     result = db.execute(sql)
     Pokemon.new(result[0])
-  end.first
+  end
   
   
 end

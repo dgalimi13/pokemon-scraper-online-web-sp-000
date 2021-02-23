@@ -18,7 +18,7 @@ class Pokemon
   end
   
   def self.find(id,db)
-    sql = "SELECT * FROM songs WHERE id = ?"
+    sql = "SELECT * FROM pokemon WHERE id = ?"
     result = db.execute(sql, id)[0]
     Pokemon.new(result[0], result[1], result[2])
   end

@@ -22,7 +22,7 @@ class Pokemon
     "SELECT * FROM pokemon WHERE id = ?"
     SQL
     result = db.execute(sql, id)[0]
-    Pokemon.new(result[0], result[1]
+    Pokemon.new(result[0], result[1])
   end
   end
   

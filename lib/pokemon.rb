@@ -25,6 +25,6 @@ class Pokemon
     Pokemon.new(result[0], result[1]
   end
   end
-  
+end
   
 end

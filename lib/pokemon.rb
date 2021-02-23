@@ -25,7 +25,7 @@ class Pokemon
     LIMIT 1
     SQL
     result = db.execute(sql, id)
-    Pokemon.new
+    Pokemon.new(id, name,type,db)
   end
   
   

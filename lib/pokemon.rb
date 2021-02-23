@@ -21,8 +21,8 @@ class Pokemon
     sql = <<-SQL
     "SELECT * FROM pokemon WHERE id = ?"
     SQL
-    result = db.execute(sql, id)[0]
-    Pokemon.new(result[0], result[1])
+    result = db.execute(sql)
+    Pokemon.new(result[0])
   end
   
   

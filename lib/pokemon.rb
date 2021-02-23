@@ -19,7 +19,10 @@ class Pokemon
   
   def self.find(id,db)
     sql = <<-SQL
-    "SELECT * FROM pokemon WHERE id = ?"
+    "SELECT * 
+    FROM pokemon 
+    WHERE id = ?
+    LIMIT 1"
     SQL
     result = db.execute(sql)
     Pokemon.new(result[0])

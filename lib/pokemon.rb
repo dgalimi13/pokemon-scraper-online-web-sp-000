@@ -9,4 +9,5 @@ class Pokemon
   end
   
   
+  
 end
